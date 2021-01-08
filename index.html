@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mad Libs</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Madlibs!</h1>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <section>
+          <form id="generateMadlib" action="#" method="POST">
+            <label>
+              My Name
+              <input type="text" name="myNameInput" id="myNameInput" placeholder="What is your name?" />
+            </label>
+            <label>
+              My Favorite Subject
+              <input type="text" name="mySubjectInput" id="mySubjectInput" placeholder="What is your favorite subject?"/>
+            </label>
+            <button type="submit">Generate Madlib</button>
+          </form>
+        </section>
+        <section id="madlib">
+          <p>
+            My name is <span id="myName" class="placeholder"></span> and my favorite subject is
+            <span id="mySubject" class="placeholder"></span>.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="js/index.js"></script>
+</html>
