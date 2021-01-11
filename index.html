@@ -1,40 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mad Libs</title>
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <header>
-      <div class="wrapper">
-        <h1>Madlibs!</h1>
-      </div>
-    </header>
-    <main>
-      <div class="wrapper">
-        <section>
-          <form id="generateMadlib" action="#" method="POST">
-            <label>
-              My Name
-              <input type="text" name="myNameInput" id="myNameInput" placeholder="What is your name?" />
-            </label>
-            <label>
-              My Favorite Subject
-              <input type="text" name="mySubjectInput" id="mySubjectInput" placeholder="What is your favorite subject?"/>
-            </label>
-            <button type="submit">Generate Madlib</button>
-          </form>
-        </section>
-        <section id="madlib">
-          <p>
-            My name is <span id="myName" class="placeholder"></span> and my favorite subject is
-            <span id="mySubject" class="placeholder"></span>.
-          </p>
-        </section>
-      </div>
-    </main>
-  </body>
-  <script src="js/index.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mad Libs</title>
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <h1>Madlibs!</h1>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <section>
+                    <form id="generateMadlib" action="#" method="POST">
+                        <label>
+                            My Name
+                            <input
+                                type="text"
+                                name="myNameInput"
+                                id="myNameInput"
+                                placeholder="What is your name?"
+                            />
+                        </label>
+                        <label>
+                            My Favorite Subject
+                            <input
+                                type="text"
+                                name="mySubjectInput"
+                                id="mySubjectInput"
+                                placeholder="What is your favorite subject?"
+                            />
+                        </label>
+                        <label>
+                            My Favorite Food
+                            <input
+                                type="text"
+                                name="myFoodInput"
+                                id="myFoodInput"
+                                placeholder="What is your favorite food?"
+                            />
+                        </label>
+                        <label>
+                            My Favorite Drink
+                            <input
+                                type="text"
+                                name="myDrinkInput"
+                                id="myDrinkInput"
+                                placeholder="What is your favorite drink?"
+                            />
+                        </label>
+                        <button type="submit">Generate Madlib</button>
+                    </form>
+                </section>
+                <section id="madlib">
+                    <p>
+                        My name is <span class="madlib_placeholder"></span> and
+                        my favorite subject is
+                        <span class="madlib_placeholder"></span>.
+                    </p>
+                    <p>
+                        I like to eat
+                        <span class="madlib_placeholder"></span> for dinner,
+                        with a glass of <span class="madlib_placeholder"></span>
+                    </p>
+                </section>
+            </div>
+        </main>
+    </body>
+    <script src="js/index.js"></script>
 </html>

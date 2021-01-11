@@ -20,6 +20,12 @@ section {
     width: 100%;
 }
 
+form label {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+}
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +34,7 @@ section {
     width: 100%;
 }
 
-.placeholder {
+.madlib_placeholder {
     background-color: #efefef;
     border-bottom: solid 1px #000;
     display: inline-block;
